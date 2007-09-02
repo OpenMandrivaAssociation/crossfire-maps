@@ -1,5 +1,5 @@
-%define version 1.9.1
-%define release %mkrel 2
+%define version 1.10.0
+%define release %mkrel 1
 
 Name:		crossfire-maps
 Version:	%{version}
