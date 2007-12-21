@@ -10,6 +10,7 @@ License:	GPL
 URL:		http://crossfire.real-time.com/
 Source0:	http://prdownloads.sourceforge.net/crossfire/crossfire-%{version}.maps.tar.bz2
 Source1:	crossfire-maps.README.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 Buildarch:	noarch
 
 %description
