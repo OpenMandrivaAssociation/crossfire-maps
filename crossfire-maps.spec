@@ -1,4 +1,4 @@
-%define version 1.10.0
+%define version 1.11.0
 %define release %mkrel 1
 
 Name:		crossfire-maps
