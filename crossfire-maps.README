@@ -1,0 +1,11 @@
+Since 1.5.0, crossfire 'bigworld' maps are available. It contain
+the new map distribution - this has a much larger oudoor world -
+eventually these will be the default mapset.
+
+crossfire-<version>-maps-big.tar.gz is the new map distribution,
+while crossfire-<version>-maps-small.tar.gz corresponds to the
+map distribution before crossfire 1.5.0.
+
+Note that if your server was previous using the smaller map set,
+you will need to use various scripts included in Info/ to update
+unique maps and other exits. See the Info/README file.

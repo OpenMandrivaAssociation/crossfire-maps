@@ -1,4 +1,4 @@
-%define version 1.50.0
+%define version 1.70.0
 %define release %mkrel 1
 
 Name:		crossfire-maps
@@ -8,9 +8,8 @@ Summary:	Map files for Crossfire, a graphical adventure game
 Group:		Games/Adventure
 License:	GPL
 URL:		http://crossfire.real-time.com/
-Source0:	http://prdownloads.sourceforge.net/crossfire/crossfire-%{version}.maps.tar.bz2
+Source0:	http://downloads.sourceforge.net/project/crossfire/crossfire-%{version}/crossfire-%{version}.maps.tar.bz2
 Source1:	crossfire-maps.README
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 Buildarch:	noarch
 
 %description
@@ -30,15 +29,11 @@ cp %{SOURCE1} README
 %build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_gamesdatadir}/crossfire
 tar -xvf %SOURCE0 -C %{buildroot}%{_gamesdatadir}/crossfire/
 
 # cleanup
 find %{builddoot}%{_gamesdatadir}/crossfire -name '.#*' -type f -print0 | xargs -r -0 rm -f
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
