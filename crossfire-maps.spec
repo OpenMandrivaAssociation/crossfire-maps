@@ -7,7 +7,7 @@ Release:	%{release}
 Summary:	Map files for Crossfire, a graphical adventure game
 Group:		Games/Adventure
 License:	GPL
-URL:		http://crossfire.real-time.com/
+URL:		https://crossfire.real-time.com/
 Source0:	http://downloads.sourceforge.net/project/crossfire/crossfire-%{version}/crossfire-%{version}.maps.tar.bz2
 Source1:	crossfire-maps.README
 Buildarch:	noarch
